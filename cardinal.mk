@@ -33,6 +33,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-zuk
 TARGET_VENDOR_PRODUCT_NAME := z2_plus
 TARGET_VENDOR_DEVICE_NAME := z2_plus
 
+# MAINTAINER
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cardinal.maintainer=Danish
+
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="z2_plus" \
