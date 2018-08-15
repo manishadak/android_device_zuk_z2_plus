@@ -21,10 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
 # Inherit some common Cardinal stuff.
-$(call inherit-product, vendor/cardinal/common.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cardinal_z2_plus
+PRODUCT_NAME := havoc_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
@@ -32,10 +32,6 @@ PRODUCT_MANUFACTURER := ZUK
 PRODUCT_GMS_CLIENTID_BASE := android-zuk
 TARGET_VENDOR_PRODUCT_NAME := z2_plus
 TARGET_VENDOR_DEVICE_NAME := z2_plus
-
-# MAINTAINER
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cardinal.maintainer=Danish
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
